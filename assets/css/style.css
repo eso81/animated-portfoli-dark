@@ -23,17 +23,81 @@
     --rouge-color:#A03866;
 
     /*transition*/
-
+    --transition-01:all .4s ease;
 
     /*border*/
 
 
 
 }
-/*_____   _______*/
+/*_____ reset  _______*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-playfair);
+    list-style: 1.5;
+    color: var(--black-color);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 
-/*_____   _______*/
+/*_____ header  _______*/
+.header{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    z-index: 222;
+}
+.navBrand{
+    font-size: 2.4rem;
+    color: var(--cristine-color);
+    font-weight: 600;
+    background-color: var(--white-color);   
+}
+.navBrand b{
+    color:var(--eden-color)
+}
+.navbarList{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: right;
+    margin-right: 100px;
+}
+ul li {
+    margin: 0 20px;
+}
+ul li a {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--eden-color);
+    text-transform: capitalize;
+    letter-spacing: 1;
+    transition: var(--transition-01);
+}
+ul li:hover a {
+    color: var(--cristine-color);
 
+}
 /*_____   _______*/
 
 /*_____   _______*/
